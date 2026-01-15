@@ -1,6 +1,9 @@
 @echo off
 setlocal
 
+:: Move to the directory where this script lives
+cd /d "%~dp0"
+
 :: Check the number of files in the input
 if "%~2"=="" (
   :: Single file
